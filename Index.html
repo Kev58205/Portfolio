@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mobile Wallet</title>
+
+    <style>
+
+        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
+
+        .wallet-container { border: 1px solid #ccc; padding: 20px; margin: 20px auto; width: 300px; }
+
+        input { width: 80%; padding: 10px; margin: 10px 0; }
+
+        button { padding: 10px 20px; background-color: #4CAF50; color: white; border: none; cursor: pointer; }
+
+        button:hover { background-color: #45a049; }
+
+    </style>
+
+</head>
+
+<body>
+
+<h1>Mobile Wallet</h1>
+
+<div class="wallet-container">
+
+    <h2>Current Balance: $<span id="wallet-balance">1000</span></h2>
+
+    <h3>Send Money</h3>
+
+    <input type="number" id="send-amount" placeholder="Enter amount to send">
+
+    <button id="send-btn">Send</button>
+
+    <h3>Receive Money</h3>
+
+    <input type="number" id="receive-amount" placeholder="Enter amount to receive">
+
+    <button id="receive-btn">Receive</button>
+
+    <h3 id="transaction-status"></h3>
+
+</div>
+
+<script src="wallet.js"></script>
+
+</body>
+
+  </html>
